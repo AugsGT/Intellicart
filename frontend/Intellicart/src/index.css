@@ -1,0 +1,54 @@
+.sidebar {
+  background-color: blue;
+  width: 200px;
+  height: 100vh;
+  top: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.main{
+ display:flex;
+}
+.navbar {
+  background-color: greenyellow;
+  width: 100%;
+  height: 140px;
+}
+
+.orientation{
+  flex:1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.product-card {
+  width: 250px;
+  background-color: red;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 45px;
+}
+
+.sidebar-collapsed {
+  width: 50px;
+}
+
+.collapse-button {
+  position: fixed;
+  z-index: 1000;}
