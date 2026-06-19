@@ -1,8 +1,14 @@
 function Sidebar(){
     return(
-        <div className = 'sidebar'>
+        <div className = 'sidebar-inner'>
             <aside>
-                <h3>Sidebar</h3>
+                <div>
+                <button className = 'sidebar-button'><h2>Products</h2></button>
+                <button className = 'filler'></button>
+                <button className = 'sidebar-button'><h2>Cart</h2></button>
+                <button className = 'filler'></button>              
+                <button className = 'sidebar-button'><h2>Payment</h2></button>
+                </div>
             </aside>
         </div>
     )
