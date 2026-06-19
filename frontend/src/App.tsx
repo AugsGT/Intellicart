@@ -34,6 +34,8 @@ const products = [
     price: 2222
   }
 ];
+
+
 function App() {
   const [open, setOpen] = useState(true);
   return (
@@ -44,7 +46,7 @@ function App() {
           onClick={() => setOpen(!open)}>Collapse</button>
       </div>
       <div className={open ? "sidebar" : "sidebar sidebar-collapsed"}>
-        <Sidebar />
+        <Sidebar open={open}/>
       </div>
       <div className="orientation">
       <Navbar />
