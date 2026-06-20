@@ -1,4 +1,4 @@
-import { Menu, House, ShoppingBag, Package, User } from "lucide-react";
+import { Menu, House, ShoppingBag, Package, User, Settings } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 type SidebarProps = {
@@ -30,6 +30,11 @@ const menu = [
         icon: User,
         text: "Profile",
         route: "/Profile"
+    },
+    {
+        icon: Settings,
+        text: "Admin",
+        route: "/admin"
     }
 ];
 
@@ -43,7 +48,7 @@ function Sidebar({ open, setOpen }: SidebarProps) {
 
                     return (
                         <NavLink
-                            to={item.route}
+                            to={item.route || "#"}
                             className="sidebar-button"
                             key={item.text}
                             onClick={() => {

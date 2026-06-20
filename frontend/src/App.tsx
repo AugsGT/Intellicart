@@ -5,6 +5,7 @@ import ProductPage from "./pages/ProductPage";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
 import Profile from "./pages/Profile";
+import Admin from "./pages/Admin";
 import { useState } from "react";
 
 function App() {
@@ -31,9 +32,12 @@ function App() {
         <Route
         path="/Payment"
         element={<Payment/>}/>
-        <Route
+        <Route          
         path="/Profile"
         element={<Profile/>}/>
+        <Route          
+        path="/admin"
+        element={<Admin/>}/>
       </Routes>
   
     </div>

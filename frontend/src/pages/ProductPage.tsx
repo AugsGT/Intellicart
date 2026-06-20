@@ -1,51 +1,30 @@
 import Product from '../components/Product';
-const products = [
-  {
-    image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product",
-    description: "the product",
-    price: 2222
-  },
-  {
-    image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product1",
-    description: "the product",
-    price: 2222
-  },
-   {
-    image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product2",
-    description: "the product",
-    price: 2222
-  },
-   {
-    image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product3",
-    description: "the product",
-    price: 2222
-  },
-   {
-    image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product4",
-    description: "the product",
-    price: 2222
-  }
-];
+import { useProducts } from '../context/ProductContext';
 
-function ProductPage(){
-  return(
+function ProductPage() {
+  const { products } = useProducts();
+
+  return (
     <>
-      <h1 style={{textAlign: 'center'}}>Featured Products....</h1>
-            <div className='products'>
-            {
-          products.map((product) => (
+      <div className="page-header">Featured Products</div>
+      {products.length === 0 ? (
+        <h2 style={{ textAlign: 'center', marginTop: '50px', color: '#94a3b8' }}>No products available. Check back later!</h2>
+      ) : (
+        <div className='products'>
+          {products.map((product) => (
             <Product
-              key={product.name}
+              key={product.id}
+              id={product.id}
               image={product.image}
               name={product.name}
               description={product.description}
-              price={product.price} />
-          ))
-  }</div></>
-);
-  }export default ProductPage;
+              price={product.price} 
+            />
+          ))}
+        </div>
+      )}
+    </>
+  );
+}
+
+export default ProductPage;
