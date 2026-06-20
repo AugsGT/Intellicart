@@ -13,7 +13,7 @@ const menu = [
     },
     {
         icon: House,
-        text: "Products",
+        text: "Home",
         route:"/"
     },
     {
@@ -23,11 +23,13 @@ const menu = [
     },
     {
         icon: Package,
-        text: "Payment"
+        text: "Payment",
+        route: "/Payment"
     },
     {
         icon: User,
-        text: "Profile"
+        text: "Profile",
+        route: "/Profile"
     }
 ];
 

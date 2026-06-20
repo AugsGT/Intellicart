@@ -14,19 +14,19 @@ const products = [
   },
    {
     image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product",
+    name: "Product2",
     description: "the product",
     price: 2222
   },
    {
     image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product",
+    name: "Product3",
     description: "the product",
     price: 2222
   },
    {
     image: "frontend/Intellicart/src/assets/hero.png",
-    name: "Product",
+    name: "Product4",
     description: "the product",
     price: 2222
   }

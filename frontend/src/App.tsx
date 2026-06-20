@@ -1,9 +1,10 @@
 import { Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
-import Product from './components/Product';
 import ProductPage from "./pages/ProductPage";
 import Cart from "./pages/Cart";
+import Payment from "./pages/Payment";
+import Profile from "./pages/Profile";
 import { useState } from "react";
 
 function App() {
@@ -27,6 +28,12 @@ function App() {
         path="/cart"
         element={<Cart />}
         />
+        <Route
+        path="/Payment"
+        element={<Payment/>}/>
+        <Route
+        path="/Profile"
+        element={<Profile/>}/>
       </Routes>
   
     </div>
