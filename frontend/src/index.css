@@ -26,7 +26,7 @@ body {
 }
 
 .sidebar-collapsed {
-  width: 50px; 
+  width: 60px; 
 }
 
 /* Make sure the inner div takes full width so buttons don't break when collapsing */

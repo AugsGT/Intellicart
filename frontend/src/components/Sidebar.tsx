@@ -1,17 +1,25 @@
-import { House, ShoppingBag, Package, User } from "lucide-react";
+import { Menu, House, ShoppingBag, Package, User } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 type SidebarProps = {
     open: boolean;
+    setOpen: (open: boolean) => void;
 };
 
 const menu = [
     {
+        icon: Menu,
+        text:"Collapse"
+    },
+    {
         icon: House,
-        text: "Products"
+        text: "Products",
+        route:"/"
     },
     {
         icon: ShoppingBag,
-        text: "Cart"
+        text: "Cart",
+        route: "/cart"
     },
     {
         icon: Package,
@@ -23,7 +31,7 @@ const menu = [
     }
 ];
 
-function Sidebar({ open }: SidebarProps) {
+function Sidebar({ open, setOpen }: SidebarProps) {
     return (
         <div className="sidebar-inner">
             <aside>
@@ -32,16 +40,22 @@ function Sidebar({ open }: SidebarProps) {
                     const Icon = item.icon;
 
                     return (
-                        <button
+                        <NavLink
+                            to={item.route}
                             className="sidebar-button"
                             key={item.text}
+                            onClick={() => {
+                                if (item.text === "Collapse") {
+                                    setOpen(!open);
+                                }
+                            }}
                         >
-                            <Icon size={20} />
+                            <Icon size={25} />
 
                             {open && (
-                                <span>{item.text}</span>
+                                <span style={{fontSize: 18}}>{item.text}</span>
                             )}
-                        </button>
+                        </NavLink>
                     );
                 })}
 
