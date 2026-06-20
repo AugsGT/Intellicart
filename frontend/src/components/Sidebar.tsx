@@ -30,11 +30,6 @@ const menu = [
         icon: User,
         text: "Profile",
         route: "/Profile"
-    },
-    {
-        icon: Settings,
-        text: "Admin",
-        route: "/admin"
     }
 ];
 

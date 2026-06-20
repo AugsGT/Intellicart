@@ -37,6 +37,13 @@ const initialProducts: ProductItem[] = [
         name: "Wireless Charging Pad",
         description: "Fast charging for all your Qi-enabled devices.",
         price: 45
+    },
+    {
+        id: 5,
+        image: "/hero.png",
+        name: "Charging Pad",
+        description: "Fast charging for all your Qi-enabled devices.",
+        price: 35
     }
 ];
 
