@@ -11,6 +11,7 @@ def root():
         version = conn.execute(text("SELECT version();")).scalar()
 
     return{
+        "status": "Backend Running",
         "database":"connected",
         "postgres":version
     }

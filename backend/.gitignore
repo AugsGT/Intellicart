@@ -1,0 +1,105 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+
+# ----------------------------
+# IDEs
+# ----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------
+# OS Files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+logs/
+
+# ----------------------------
+# Testing
+# ----------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ----------------------------
+# Type Checkers
+# ----------------------------
+.mypy_cache/
+.pyre/
+.pytype/
+
+# ----------------------------
+# Linting
+# ----------------------------
+.ruff_cache/
+
+# ----------------------------
+# Build
+# ----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ----------------------------
+# Jupyter
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# Database
+# ----------------------------
+*.db
+*.sqlite3
+
+# ----------------------------
+# Alembic
+# ----------------------------
+# Keep migrations under version control
+# Ignore only cache files
+migrations/__pycache__/
+
+# ----------------------------
+# Temporary Files
+# ----------------------------
+*.tmp
+*.temp
+.cache/
+
+# ----------------------------
+# Uploaded Media (optional)
+# ----------------------------
+uploads/
+media/
+
+# ----------------------------
+# Secrets / Keys
+# ----------------------------
+*.pem
+*.key
+*.crt
