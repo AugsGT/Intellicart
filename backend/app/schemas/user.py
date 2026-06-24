@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, ConfigDict
 #pydantic validator that checcks data format and 
 class UserCreate(BaseModel):
     username:str
@@ -10,7 +10,6 @@ class UserRead(BaseModel):
     username:str
     email:EmailStr
 
-    model_config={
-        "from_attributes": True
-    }
+    model_config=ConfigDict(from_attributes= True)
+    
     
